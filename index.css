@@ -1,9 +1,10 @@
 body{
     box-sizing: border-box;
+    margin: 0 0 0 0;
 }
 .container{
     display: grid;
-    grid-template-rows: 100px,repeat(3,1fr);
+    grid-template-rows: 100px,repeat(3,1fr),50px;
 
 }
 .nav_1{
@@ -14,5 +15,36 @@ body{
 }
 .nav_1 > h1{
     margin-left: 10px;
-    
+    font-family: 'Stylish', sans-serif;
+}
+.nav_1 > img{
+    height: 40px;
+}
+.nav_m{
+grid-row: 2/3;
+}
+.nav_2{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -100px;
+
+}
+.nav_2 > li{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Stylish',sans-serif;
+}
+.footer{
+    grid-row: 8/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.footer >img{
+    height: 20px;
+}
+.footer_2{
+    display: flex;
+    justify-content: center;
 }
