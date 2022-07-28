@@ -35,16 +35,18 @@ grid-row: 2/3;
     font-family: 'Stylish',sans-serif;
 }
 .footer{
-    grid-row: 8/9;
+    position: absolute;
+    bottom: 0px;
+    right: 570px;
+}
+.footer_icon{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 30px;
     gap: 50px;
 }
-.footer >img{
-    height: 200px;
-}
-.footer_2{
+.footer >p{
     display: flex;
-    justify-content: center;
+    margin-left: 80px;
+    color: gray;
+    font-size: 12px;
 }
