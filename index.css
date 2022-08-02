@@ -1,6 +1,14 @@
 body{
     box-sizing: border-box;
-    margin: 0 0 0 0;
+    margin: 0 0 0 0;/*
+    background: #eb01a5;
+    background-image:url("./pictures/pexels-taryn-elliott-3889991.jpg");
+    background-image:url("./pictures/pexels-taryn-elliott-3889991.jpg"),linear-gradient(#eb01a5, #d13531);
+    background-size: 2000px 800px;
+    background-repeat: no-repeat;*/
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(30, 77, 70, 0.73)),
+    url(./pictures/pexels-taryn-elliott-3889991.jpg);
+    background-size: cover;
 }
 .container{
     display: grid;
@@ -16,6 +24,7 @@ body{
 .nav_1 > h1{
     margin-left: 10px;
     font-family: 'Stylish', sans-serif;
+    color: GRAY;
 }
 .nav_1 > img{
     height: 40px;
@@ -34,18 +43,25 @@ grid-row: 2/3;
     text-decoration: none;
 }
 .footer{
+    height: 100px;
+    width:100%;
     position: absolute;
     bottom: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
-.footer_icon{
+.footer_icons{
     display: flex;
     height: 30px;
+    justify-content: center;
     gap: 50px;
 }
 .footer >p{
     display: flex;
-    margin-left: 80px;
-    color: gray;
+    margin-top: 2em;
+    justify-content: center;
+    color: rgb(194, 173, 173);
     font-size: 12px;
 }
