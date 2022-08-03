@@ -1,5 +1,43 @@
 .text{
-    border: 2px solid beige;
-    width: 200px;
+    margin-left: auto;
+    margin-right: 20%;
+    border: 2px solid gray;
+    width: 600px;
     height: 200px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.text:hover{
+    transform: scale(1.1);
+    border: 6px solid white;
+    background-color: transparent;
+    color: white;
+    
+}
+.container{
+    grid-row: 2/5;
+}
+.container >h2{
+    margin-left: 10rem;
+    font-size: 50px;
+    color: white;
+    font-family: 'Mouse Memoirs', sans-serif;
+    letter-spacing: 3px;
+}
+.best{
+    color: gray;
+    font-family: 'stylish';
+}
+.best:hover{
+    font-size: 40px;
+}
+.text-p{
+    padding-left: 20px;
+    color: gray;
+    padding-right: 40px;
+    font-family: 'Mouse Memoirs',sans-serif;
+}
+.text-p:hover{
+ color: white;
 }

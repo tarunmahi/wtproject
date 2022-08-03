@@ -5,4 +5,3 @@
   ![](Screenshot%20(305).png)
   - in the above picture the navigation setup is done in a **flexbox** container.
   - all the elements are buitl up in anchor tag which redirects to their respective fields among them.
-  
