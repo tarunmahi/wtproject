@@ -1,20 +1,4 @@
-.text{
-    margin-left: auto;
-    margin-right: 20%;
-    border: 2px solid gray;
-    width: 600px;
-    height: 200px;
-    border-radius: 20px;
-    background-color: white;
 
-}
-.text:hover{
-    transform: scale(1.1);
-    border: 6px solid white;
-    background-color: transparent;
-    color: white;
-    
-}
 .container{
     grid-row: 2/5;
 }
@@ -32,17 +16,11 @@
 .best:hover{
     font-size: 40px;
 }
-.text-p{
-    padding-left: 20px;
-    color: gray;
-    padding-right: 40px;
-    font-family: 'Mouse Memoirs',sans-serif;
-}
-.text-p:hover{
- color: white;
-}
 .explore{
-    height: 30px;
+    display: block;
+    margin-left: auto;
+    height: 45px;
+    width: 120px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 7px;
@@ -52,11 +30,9 @@
     font-family: 'Mouse Memoirs',sans-serif;
     letter-spacing: 1px;
     border-color: gray;
-    margin-left: auto;
-    margin-right: 10%;
-    position: absolute;
-    right: 5%;
-    top: 75%;
+    margin-top: 1%;
+    margin-inline-end: 9%;
+   
 }
 .explore:hover{
     transform: scale(1.3);
@@ -64,4 +40,21 @@
     background-color: transparent;
     color: white;
     font-family: 'Mouse Memoirs',sans-serif;
+}
+.text{
+    height: 200px;
+    width: 500px;
+    padding: 15px ;
+    border: 4px solid gray;
+    border-radius: 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: 19%;
+}
+.text:hover{
+    transform: scale(1.1);
+    border: none;
+    background-color: white;
+    color: gray;
+    font-size: 15px;
 }
