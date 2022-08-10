@@ -1,8 +1,49 @@
-.portal{
-    display: inline;
+.cont-portal{
+    display: flex;
     align-items: center;
-    height: 500px;
-    width: 600px;
-    border: 1px solid gray;
-    grid-column: 2/3;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.portal{
+    display: flex;
+    border-radius: 30px;
+    height: 200px;
+    width: 400px;
+    gap: 40px;
+    border: 3px solid gray;
+    justify-content: center;
+    background-color: white;
+}
+.portal:hover{
+    transition:0.2s;
+    transform: scale(1.1);
+}
+.portal >button{
+    height: 40px;
+    width: 100px;
+    margin-top: 20%;
+    border-radius: 15px;
+    border-color: gray;
+    background-color: gray;
+    color: white;
+}
+.login:hover{
+    transform: scale(1.1);
+}
+.signup:hover{
+    transform: scale(1.1);
+}
+
+.containe{
+    color: white;
+    font-family: 'Mouse Memoirs',sans-serif;
+    font-size: 40px;
+    margin-left: 40px;
+    letter-spacing: 5px;
+}
+.best{
+    color: gray;
+}
+.best:hover{
+    font-size: 50px;
 }
