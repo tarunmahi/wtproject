@@ -1,6 +1,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="./css/signup.css">
+        <link rel="stylesheet" href="./css/home.css">
         <link rel="stylesheet" href="./css/profile.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
@@ -31,12 +34,27 @@
                 </ul>
             </nav>
             <section class="containe">
-                <h2> <span class="best">Login</span> Method</h2>
-            <div class="cont-portal">    
-            <div class="portal">
-             <button class="login" onclick="window.location.href='login.html'">Log in</button>
-             <button class="signup" onclick="window.location.href='signup.html'">Sign Up</button>
-             </div></div>
+                <h2> <span class="best">signup</span> Page</h2>
+            <div class="cont-portal1">    
+            <div class="portal1">
+                <form class="forms">
+                    <label>first name</label>
+                    <input type="text" placeholder="first name" required><br/>
+                    <label>last name</label>
+                    <input type="text" placeholder="last name" required><br/>
+                    <label>Email</label>
+                    <input type="email" placeholder="xxxxxx@xmail.com" required><br/>
+                    <label>d-o-b</label>
+                    <input type="date" placeholder="" required><br/>
+                    <label>password</label>
+                    <input type="password" required><br/>
+                    <label>verify password</label>
+                    <input type="password" required><br/>
+                    <button class="butt" type="submit">submit</button>
+
+                </form>
+            </div></div>
+             <button class="explor" onclick="window.location.href='profile.html'">GO BACK</button>
             </section>
             <footer class="footer">
                 <nav class="footer_icons">
