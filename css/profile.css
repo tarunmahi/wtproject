@@ -1,0 +1,8 @@
+.portal{
+    display: inline;
+    align-items: center;
+    height: 500px;
+    width: 600px;
+    border: 1px solid gray;
+    grid-column: 2/3;
+}
