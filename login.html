@@ -1,6 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="./css/home.css">
         <link rel="stylesheet" href="./css/profile.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
@@ -31,12 +33,20 @@
                 </ul>
             </nav>
             <section class="containe">
-                <h2> <span class="best">Login</span> Method</h2>
+                <h2> <span class="best">Login</span> Page</h2>
             <div class="cont-portal">    
             <div class="portal">
-             <button class="login" onclick="window.location.href='login.html'">Log in</button>
-             <button class="signup">Sign Up</button>
-             </div></div>
+                <form class="forms">
+                    <label color="black">username:</label>
+                    <input type="text" placeholder="username" required>
+                    <br/><label>password:</label>
+                    <input type="password" placeholder="password" required>
+                    <br/><button type="submit">Login</button>
+
+                </form>
+               
+            </div></div>
+             <button class="explor" onclick="window.location.href='profile.html'">GO BACK</button>
             </section>
             <footer class="footer">
                 <nav class="footer_icons">
