@@ -12,3 +12,7 @@
    - The button `come and explore` takes the user into the next navigated page namely `places`.in places we will find the total different places company offers.The button follows a **window location** changing method which works on **onclick** method <br/>
 
    ## profile
+  >profile page has **two login methods** as in given picture<br/>
+
+![](screenshots/Screenshot%20(321).png)
+- each page navigates to its own login component method.
