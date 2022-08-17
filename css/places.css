@@ -1,5 +1,6 @@
 .container>img{
-    height: 220px;
+    height: 230px;
+    width: max-content;
     border-radius: 25px;
     border: 3px solid white;
     margin-right: 5px;
