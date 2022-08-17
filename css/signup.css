@@ -1,18 +1,24 @@
 .cont-portal1{
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
 }
 .portal1{
-    display: flex;
+    display: grid;
+    grid-template-columns:max-content max-content ;
+    grid-gap: 5px;
     border-radius: 30px;
     height: 293px;
-    width: 400px;
+    width: 450px;
     gap: 40px;
     border: 3px solid gray;
     justify-content: center;
     background-color: white;
+    overflow:auto;
+}
+.portal1::-webkit-scrollbar{
+    display: none;
 }
 .portal1:hover{
     transition:0.2s;
@@ -20,16 +26,22 @@
 }
 .portal1{
     color: gray;
-    font-size: 25px;
+    font-size: 22px;
     font-family: "Times New Roman", Times, serif;
     letter-spacing: 0px;
 }
-.forms{
+.forms {
     margin-top: 30px;
-    text-align: start;
+    grid-column: 1/4;
+}
+.portal1 label{
+    width: 160px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
 }
 .forms input{
-    height: 20px;
-  flex: 0 0 200px;
+    height: 28px;
+    width: 200px;
   margin-left: 10px;
 }
