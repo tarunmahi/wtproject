@@ -16,3 +16,4 @@
 
 ![](screenshots/Screenshot%20(321).png)
 - each page navigates to its own login component method.
+- they are to be filled by the user to give his primary details for the creation of the website.
