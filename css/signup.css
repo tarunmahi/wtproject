@@ -43,6 +43,8 @@
 .forms input{
     height: 28px;
     width: 200px;
+    padding-left: 13px;
+    padding-top: 3px;
   margin-left: 10px;
   border-radius: 8px;
 }
