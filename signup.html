@@ -57,11 +57,48 @@
                     <label>mobile number</label>
                     <input placeholder="985XXXXXX7"type="textarea" id="mobile"class="addr" required><br/>
                     <div class="alert">registration successfull</div>
-                    <button class="butt" type="submit">submit</button>
+                    <button class="butt" type="submit" id="signup">submit</button>
                 </form>
                 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-    <script src="mail.js"></script>
+    <script src="signup.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+       
+        const firebaseConfig = {
+          apiKey: "AIzaSyBkyeiYNOfQ0roeCodAGv7mrWsXVDSq8A4",
+          authDomain: "travelers-c99c8.firebaseapp.com",
+          databaseURL: "https://travelers-c99c8-default-rtdb.firebaseio.com",
+          projectId: "travelers-c99c8",
+          storageBucket: "travelers-c99c8.appspot.com",
+          messagingSenderId: "624064351971",
+          appId: "1:624064351971:web:417071f4034300c04bbfd6"
+        };
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+      
+      signup.addEventListener('click',(e) => {
+      
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('Tpass').value;
+      
+        createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            alert('user created!');
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+      
+            alert(errorMessage);
+          });
+      
+      });
+      </script>
 
             </div></div>
              <button class="explor" onclick="window.location.href='profile.html'">GO BACK</button>

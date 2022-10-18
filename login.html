@@ -36,16 +36,66 @@
                 <h2> <span class="best">Login</span> Page</h2>
             <div class="cont-portal">    
             <div class="portal">
-                <form class="forms">
+                <div class="forms">
                     <label color="black">username:</label>
-                    <input type="text" placeholder="username" required>
+                    <input type="email" placeholder="username" id="username" required>
                     <br/><label>password:</label>
-                    <input type="password" placeholder="password" required>
-                    <br/><button type="submit" class="butt">Login</button>
+                    <input type="password" placeholder="password" id="Tpassword" required>
+                    <br/><button  class="butt" id="login">Login</button>
 
-                </form>
-               
+                </div>
+                
             </div></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+    
+        const firebaseConfig = {
+          
+          apiKey: "AIzaSyBkyeiYNOfQ0roeCodAGv7mrWsXVDSq8A4",
+          authDomain: "travelers-c99c8.firebaseapp.com",
+          databaseURL: "https://travelers-c99c8-default-rtdb.firebaseio.com",
+          projectId: "travelers-c99c8",
+          storageBucket: "travelers-c99c8.appspot.com",
+          messagingSenderId: "624064351971",
+          appId: "1:624064351971:web:417071f4034300c04bbfd6"
+        };
+      
+        
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+    
+
+      login.addEventListener('click',(e) => {
+      
+        var email = document.getElementById('username').value;
+        var password = document.getElementById('Tpassword').value;
+        
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => { 
+        const user = userCredential.user;
+
+         alert('User loged in!');
+         const dt = new Date();
+         update(ref(database, 'users/' + user.uid ),{
+          last_login: dt,
+          username :email,
+        })
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        alert(errorMessage+'invalid user');
+  });
+      
+      });
+      </script>
+
              <button class="explor" onclick="window.location.href='profile.html'">GO BACK</button>
             </section>
             <footer class="footer">

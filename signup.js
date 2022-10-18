@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
     apiKey: "AIzaSyBkyeiYNOfQ0roeCodAGv7mrWsXVDSq8A4",
     authDomain: "travelers-c99c8.firebaseapp.com",
@@ -8,7 +9,8 @@ const firebaseConfig = {
     appId: "1:624064351971:web:417071f4034300c04bbfd6"
   };
 
-  firebase.initializeApp(firebaseConfig);
+  const app =firebase.initializeApp(firebaseConfig);
+ 
 
   const signupformDB=firebase.database().ref("signupform");
 
@@ -51,3 +53,4 @@ const savedmessages=(firstname,lastname,Email,Dob,tpassword,Vpassword,mobile)=>{
   const getElementVal =(id) =>{
     return document.getElementById(id).value;
   }
+ 
