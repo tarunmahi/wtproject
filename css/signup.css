@@ -33,6 +33,7 @@
 .forms {
     margin-top: 30px;
     grid-column: 1/4;
+   
 }
 .portal1 label{
     width: 160px;
@@ -47,5 +48,23 @@
     padding-top: 3px;
   margin-left: 10px;
   border-radius: 8px;
+}
+.forms input[type=radio] {
+    border: 0px;
+    height: 15px;
+    width: 20px;
+    border-radius: 0px;
+}
+.alert{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    background:rgb(98, 233, 182);
+    color: black;
+    border-radius: 10px;
+    font-weight: 900;
+    display: none;
 
+    
 }

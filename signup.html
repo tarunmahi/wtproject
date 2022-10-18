@@ -40,24 +40,29 @@
                 <h2> <span class="best">signup</span> Page</h2>
             <div class="cont-portal1">    
             <div class="portal1">
-                <form class="forms">
+                <form class="forms" action="" method="" id="signupform">
+                 
                     <label>first name</label>
-                    <input type="text" placeholder="first name" required><br/>
+                    <input type="text" placeholder="first name" id="firstname" required><br/>
                     <label>last name</label>
-                    <input type="text" placeholder="last name" required><br/>
+                    <input type="text" placeholder="last name" id="lastname"required><br/>
                     <label>Email</label>
-                    <input type="email" placeholder="xxxxxx@xmail.com" required><br/>
+                    <input type="email" placeholder="xxxxxx@xmail.com" id="email" required><br/>
                     <label>D-O-B</label>
-                    <input type="date" placeholder="" required><br/>
+                    <input type="date" placeholder="" id="dob"required><br/>
                     <label>password</label>
-                    <input type="password" required placeholder="***********************"><br/>
+                    <input type="password" required name="tpass" id="Tpass"placeholder="***********************"><br/>
                     <label>verify password</label>
-                    <input type="password" required placeholder="***********************"><br/>
+                    <input type="password" required name="vpass" id ="Vpass"placeholder="***********************"><br/>
                     <label>mobile number</label>
-                    <input placeholder="985XXXXXX7"type="textarea" class="addr" required><br/>
-                    
+                    <input placeholder="985XXXXXX7"type="textarea" id="mobile"class="addr" required><br/>
+                    <div class="alert">registration successfull</div>
                     <button class="butt" type="submit">submit</button>
                 </form>
+                
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="mail.js"></script>
+
             </div></div>
              <button class="explor" onclick="window.location.href='profile.html'">GO BACK</button>
             </section>
